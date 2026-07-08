@@ -54,7 +54,7 @@ int main() {
 
 	int addrlen = sizeof(address);
 
-	// 从已连接的队列中取出第一个连接，创建一个新的三哦此刻他与该客户端通信
+	// 从已连接的队列中取出第一个连接，创建一个新的scoket此刻他与该客户端通信
 	int client_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen);
 
 	printf("[服务器] 客户端 (%s:%d) 已连接！现在可以互发消息了（输入 exit 断开）\n",
